@@ -55,6 +55,6 @@ def refund():
             return
 
         send(self.funders[i].sender, self.funders[i].value)
-        self.funders[i] = None
+        #this line does not compile self.funders[i] = None
 
     self.refundIndex = ind + 30
